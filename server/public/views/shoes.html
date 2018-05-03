@@ -1,0 +1,31 @@
+<div>
+    <input ng-model="newShoe.name" placeholder="Name of Shoes">
+    <input ng-model="newShoe.cost" placeholder="Cost of Shoes">
+    <button ng-click="vm.addShoes(newShoe)">Submit Shoes</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Shoe</th>
+                <th>Cost</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="shoe in vm.shoes.data">
+                <td>
+                    <input ng-model="shoe.name"/>
+                </td>
+                <td>
+                    <input ng-model="shoe.cost"/>
+                </td>
+                <td>
+                    <button ng-click="vm.editShoe(shoe)">Edit</button>
+                </td>
+                <td>
+                    <button ng-click="vm.deleteShoe(shoe)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

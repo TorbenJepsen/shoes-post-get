@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/TorbenJepsen/shoes-post-get#readme",
   "dependencies": {
+    "angular": "^1.6.10",
+    "angular-route": "^1.6.10",
+    "angularjs": "0.0.1",
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pg": "^7.4.1",
+    "save": "^2.3.2"
   }
 }
